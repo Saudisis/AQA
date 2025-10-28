@@ -1,4 +1,4 @@
-# 🌍 Air Quality Analysis (AQA) Library
+# Air Quality Analysis (AQA) Library
 
 Welcome to the **Air Quality Analysis (AQA) Library**, an integrated framework designed to automate the download, processing, and harmonization of environmental data from multiple sources.  
 This project enables the combination of **ARPA Lombardia ground data**, **Sentinel-5P satellite observations**, and **ERA5 reanalysis** variables to generate daily, spatially consistent air quality indicators.
@@ -20,7 +20,7 @@ To execute this notebook successfully, you will need access to the following dat
 
 ---
 
-## ✨ Features
+## Features
 
 - **Automated download** of ERA5, Sentinel-5P, and ARPA datasets.  
 - **Data cleaning** and normalization for all input sources.  
@@ -31,9 +31,9 @@ To execute this notebook successfully, you will need access to the following dat
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### Option 1 — Conda (Recommended)
+### Option 1 — Conda 
 ```bash
 conda env create -f environment.yml
 conda activate AQA_DayRange
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📘 Main Notebook
+## Code
 
 All functions and workflow are implemented in the **Jupyter Notebook**:
 ```
@@ -65,7 +65,7 @@ This notebook contains:
 
 ---
 
-## 🧩 Workflow Overview
+## Workflow Overview
 
 ### 1. **ARPA Data Processing**
 Loads ARPA Lombardia datasets using the API and organizes metadata for sensors, pollutants, and coordinates.
@@ -127,15 +127,14 @@ summary.to_csv("results/ARPA_ERA_SP5_<fecha>.csv", index=False)
 
 ---
 
-## 🧪 Outputs
+## Outputs
 
 - **CSV results**: `results/ARPA_ERA_SP5-<date>.csv`  
-- **Maps**: pollutant distributions and temporal evolution plots  
 - **Summary tables**: harmonized pollutant and meteorological data  
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 AQA/
@@ -149,7 +148,7 @@ AQA/
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 - **Python** (pandas, geopandas, numpy, matplotlib, xarray, requests)
 - **Google Earth Engine API**
 - **Copernicus CDS / CMCC ERA5**
@@ -158,20 +157,19 @@ AQA/
 
 ---
 
-## 🧪 Testing
-The data pipeline has been validated across multiple pollutants and provinces (Milano, Pavia, Brescia).  
-Daily mean values were verified against ARPA public datasets for consistency.
+## Testing
+The data pipeline has been validated across multiple pollutants and date ranges.  
 
 ---
 
-## 📜 License
+## License
 This project is licensed under the **MIT License**.  
 See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👤 Author
-**Saudisis**  
+## Author
+**Claudia Isabela Saud-Miño**  
 Politecnico di Milano — Environmental & Geoinformatics Research  
 📧 [Contact via GitHub](https://github.com/Saudisis)
 
