@@ -5,7 +5,7 @@ This project enables the combination of **ARPA Lombardia ground data**, **Sentin
 
 ---
 
-## 🧾 Data Requirements
+## Data Requirements
 
 To execute this notebook successfully, you will need access to the following datasets:
 
