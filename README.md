@@ -34,6 +34,8 @@ To execute this notebook successfully, you will need access to the following dat
 ## Installation
 
 ### Option 1 — Conda 
+If using Windows: environment.yml
+If using Mac: nobuilds.yml
 ```bash
 conda env create -f environment.yml
 conda activate AQA_DayRange
