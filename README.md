@@ -110,21 +110,6 @@ Combines all datasets (ARPA, ERA5, Sentinel) through coordinate matching and ave
 summary = pd.merge(ground_df, sentinel_df, on=["Latitude", "Longitude"])
 summary = pd.merge(summary, era5_df, on=["Latitude", "Longitude"])
 ```
-
----
-
-### 5. **Visualization and Export**
-Generates visual maps and CSV summaries for daily analysis.
-
-#### Example:
-```python
-plt.scatter(summary["Longitude"], summary["Latitude"], c=summary["NO2"], cmap="inferno")
-plt.title("NO₂ Concentration Map")
-plt.show()
-
-summary.to_csv("results/ARPA_ERA_SP5_<fecha>.csv", index=False)
-```
-
 ---
 
 ## Outputs
@@ -173,6 +158,3 @@ See the [LICENSE](LICENSE) file for details.
 Politecnico di Milano — Environmental & Geoinformatics Research  
 📧 [Contact via GitHub](https://github.com/Saudisis)
 
----
-
-> Let the **AQA Library** guide you toward cleaner insights and harmonized air-quality data!
