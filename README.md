@@ -124,11 +124,11 @@ summary = pd.merge(summary, era5_df, on=["Latitude", "Longitude"])
 ```
 AQA/
 │
-├── AQA_DayRange.ipynb       # Main analysis notebook
-├── environment.yml           # Conda environment
+├── AQA_DayRange.ipynb        # Main analysis notebook
+├── environment.yml           # Conda environment for windows
+├── nobuilds.yml              # Conda environment for Mac
 ├── requirements.txt          # pip dependencies
-├── README.md                 # Project documentation
-└── results/                  # Output CSVs and visualizations
+└── README.md                 # Project documentation
 ```
 
 ---
